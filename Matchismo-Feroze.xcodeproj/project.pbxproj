@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0A21FA16C253910068CC1C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0A21F916C253910068CC1C /* MainStoryboard.storyboard */; };
+		5F54F8FA16C20AF900B86F35 /* CardMatchGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F54F8F916C20AF900B86F35 /* CardMatchGame.m */; };
 		5FEF199216B7512C0062B58E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF199116B7512C0062B58E /* UIKit.framework */; };
 		5FEF199416B7512C0062B58E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF199316B7512C0062B58E /* Foundation.framework */; };
 		5FEF199616B7512C0062B58E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEF199516B7512C0062B58E /* CoreGraphics.framework */; };
@@ -16,27 +18,40 @@
 		5FEF19A416B7512C0062B58E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF19A316B7512C0062B58E /* Default.png */; };
 		5FEF19A616B7512C0062B58E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF19A516B7512C0062B58E /* Default@2x.png */; };
 		5FEF19A816B7512C0062B58E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF19A716B7512C0062B58E /* Default-568h@2x.png */; };
-		5FEF19AB16B7512C0062B58E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEF19A916B7512C0062B58E /* MainStoryboard.storyboard */; };
 		5FEF19AE16B7512C0062B58E /* cardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF19AD16B7512C0062B58E /* cardViewController.m */; };
+		5FEF19B616B7517B0062B58E /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF19B516B7517B0062B58E /* Card.m */; };
+		5FEF19BB16B75DDA0062B58E /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF19BA16B75DDA0062B58E /* Deck.m */; };
+		5FEF19C216B76C750062B58E /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF19C116B76C750062B58E /* PlayingCard.m */; };
+		5FEF19C516B7758C0062B58E /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF19C416B7758C0062B58E /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5FEF198D16B7512C0062B58E /* Mathismo-Feroze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mathismo-Feroze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0A21F916C253910068CC1C /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5F54F8F816C20AF900B86F35 /* CardMatchGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchGame.h; sourceTree = "<group>"; };
+		5F54F8F916C20AF900B86F35 /* CardMatchGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchGame.m; sourceTree = "<group>"; };
+		5FEF198D16B7512C0062B58E /* Matchismo-Feroze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matchismo-Feroze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEF199116B7512C0062B58E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FEF199316B7512C0062B58E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5FEF199516B7512C0062B58E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5FEF199916B7512C0062B58E /* Mathismo-Feroze-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mathismo-Feroze-Info.plist"; sourceTree = "<group>"; };
+		5FEF199916B7512C0062B58E /* Matchismo-Feroze-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matchismo-Feroze-Info.plist"; sourceTree = "<group>"; };
 		5FEF199B16B7512C0062B58E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FEF199D16B7512C0062B58E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5FEF199F16B7512C0062B58E /* Mathismo-Feroze-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mathismo-Feroze-Prefix.pch"; sourceTree = "<group>"; };
+		5FEF199F16B7512C0062B58E /* Matchismo-Feroze-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Matchismo-Feroze-Prefix.pch"; sourceTree = "<group>"; };
 		5FEF19A016B7512C0062B58E /* cardAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardAppDelegate.h; sourceTree = "<group>"; };
 		5FEF19A116B7512C0062B58E /* cardAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cardAppDelegate.m; sourceTree = "<group>"; };
 		5FEF19A316B7512C0062B58E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5FEF19A516B7512C0062B58E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5FEF19A716B7512C0062B58E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5FEF19AA16B7512C0062B58E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5FEF19AC16B7512C0062B58E /* cardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardViewController.h; sourceTree = "<group>"; };
 		5FEF19AD16B7512C0062B58E /* cardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cardViewController.m; sourceTree = "<group>"; };
+		5FEF19B416B7517B0062B58E /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		5FEF19B516B7517B0062B58E /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		5FEF19B916B75DDA0062B58E /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		5FEF19BA16B75DDA0062B58E /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		5FEF19C016B76C750062B58E /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		5FEF19C116B76C750062B58E /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		5FEF19C316B7758C0062B58E /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		5FEF19C416B7758C0062B58E /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +80,7 @@
 		5FEF198E16B7512C0062B58E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FEF198D16B7512C0062B58E /* Mathismo-Feroze.app */,
+				5FEF198D16B7512C0062B58E /* Matchismo-Feroze.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,11 +98,8 @@
 		5FEF199716B7512C0062B58E /* Mathismo-Feroze */ = {
 			isa = PBXGroup;
 			children = (
-				5FEF19A016B7512C0062B58E /* cardAppDelegate.h */,
-				5FEF19A116B7512C0062B58E /* cardAppDelegate.m */,
-				5FEF19A916B7512C0062B58E /* MainStoryboard.storyboard */,
-				5FEF19AC16B7512C0062B58E /* cardViewController.h */,
-				5FEF19AD16B7512C0062B58E /* cardViewController.m */,
+				5FEF19B816B7519A0062B58E /* View */,
+				5FEF19B716B7518D0062B58E /* Model */,
 				5FEF199816B7512C0062B58E /* Supporting Files */,
 			);
 			path = "Mathismo-Feroze";
@@ -96,10 +108,12 @@
 		5FEF199816B7512C0062B58E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5FEF199916B7512C0062B58E /* Mathismo-Feroze-Info.plist */,
+				5FEF19A016B7512C0062B58E /* cardAppDelegate.h */,
+				5FEF19A116B7512C0062B58E /* cardAppDelegate.m */,
+				5FEF199916B7512C0062B58E /* Matchismo-Feroze-Info.plist */,
 				5FEF199A16B7512C0062B58E /* InfoPlist.strings */,
 				5FEF199D16B7512C0062B58E /* main.m */,
-				5FEF199F16B7512C0062B58E /* Mathismo-Feroze-Prefix.pch */,
+				5FEF199F16B7512C0062B58E /* Matchismo-Feroze-Prefix.pch */,
 				5FEF19A316B7512C0062B58E /* Default.png */,
 				5FEF19A516B7512C0062B58E /* Default@2x.png */,
 				5FEF19A716B7512C0062B58E /* Default-568h@2x.png */,
@@ -107,12 +121,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5FEF19B716B7518D0062B58E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F54F8F816C20AF900B86F35 /* CardMatchGame.h */,
+				5F54F8F916C20AF900B86F35 /* CardMatchGame.m */,
+				5FEF19B416B7517B0062B58E /* Card.h */,
+				5FEF19B516B7517B0062B58E /* Card.m */,
+				5FEF19B916B75DDA0062B58E /* Deck.h */,
+				5FEF19BA16B75DDA0062B58E /* Deck.m */,
+				5FEF19C016B76C750062B58E /* PlayingCard.h */,
+				5FEF19C116B76C750062B58E /* PlayingCard.m */,
+				5FEF19C316B7758C0062B58E /* PlayingCardDeck.h */,
+				5FEF19C416B7758C0062B58E /* PlayingCardDeck.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FEF19B816B7519A0062B58E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F0A21F916C253910068CC1C /* MainStoryboard.storyboard */,
+				5FEF19AC16B7512C0062B58E /* cardViewController.h */,
+				5FEF19AD16B7512C0062B58E /* cardViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FEF198C16B7512C0062B58E /* Mathismo-Feroze */ = {
+		5FEF198C16B7512C0062B58E /* Matchismo-Feroze */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FEF19B116B7512C0062B58E /* Build configuration list for PBXNativeTarget "Mathismo-Feroze" */;
+			buildConfigurationList = 5FEF19B116B7512C0062B58E /* Build configuration list for PBXNativeTarget "Matchismo-Feroze" */;
 			buildPhases = (
 				5FEF198916B7512C0062B58E /* Sources */,
 				5FEF198A16B7512C0062B58E /* Frameworks */,
@@ -122,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = "Mathismo-Feroze";
+			name = "Matchismo-Feroze";
 			productName = "Mathismo-Feroze";
-			productReference = 5FEF198D16B7512C0062B58E /* Mathismo-Feroze.app */;
+			productReference = 5FEF198D16B7512C0062B58E /* Matchismo-Feroze.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +178,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Feroze Shahpurwala";
 			};
-			buildConfigurationList = 5FEF198716B7512C0062B58E /* Build configuration list for PBXProject "Mathismo-Feroze" */;
+			buildConfigurationList = 5FEF198716B7512C0062B58E /* Build configuration list for PBXProject "Matchismo-Feroze" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FEF198C16B7512C0062B58E /* Mathismo-Feroze */,
+				5FEF198C16B7512C0062B58E /* Matchismo-Feroze */,
 			);
 		};
 /* End PBXProject section */
@@ -163,7 +204,7 @@
 				5FEF19A416B7512C0062B58E /* Default.png in Resources */,
 				5FEF19A616B7512C0062B58E /* Default@2x.png in Resources */,
 				5FEF19A816B7512C0062B58E /* Default-568h@2x.png in Resources */,
-				5FEF19AB16B7512C0062B58E /* MainStoryboard.storyboard in Resources */,
+				5F0A21FA16C253910068CC1C /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +218,11 @@
 				5FEF199E16B7512C0062B58E /* main.m in Sources */,
 				5FEF19A216B7512C0062B58E /* cardAppDelegate.m in Sources */,
 				5FEF19AE16B7512C0062B58E /* cardViewController.m in Sources */,
+				5FEF19B616B7517B0062B58E /* Card.m in Sources */,
+				5FEF19BB16B75DDA0062B58E /* Deck.m in Sources */,
+				5FEF19C216B76C750062B58E /* PlayingCard.m in Sources */,
+				5FEF19C516B7758C0062B58E /* PlayingCardDeck.m in Sources */,
+				5F54F8FA16C20AF900B86F35 /* CardMatchGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +235,6 @@
 				5FEF199B16B7512C0062B58E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5FEF19A916B7512C0062B58E /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FEF19AA16B7512C0062B58E /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -256,9 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mathismo-Feroze/Mathismo-Feroze-Prefix.pch";
-				INFOPLIST_FILE = "Mathismo-Feroze/Mathismo-Feroze-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Mathismo-Feroze/Matchismo-Feroze-Prefix.pch";
+				INFOPLIST_FILE = "Mathismo-Feroze/Matchismo-Feroze-Info.plist";
+				PRODUCT_NAME = "Matchismo-Feroze";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -267,9 +305,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mathismo-Feroze/Mathismo-Feroze-Prefix.pch";
-				INFOPLIST_FILE = "Mathismo-Feroze/Mathismo-Feroze-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Mathismo-Feroze/Matchismo-Feroze-Prefix.pch";
+				INFOPLIST_FILE = "Mathismo-Feroze/Matchismo-Feroze-Info.plist";
+				PRODUCT_NAME = "Matchismo-Feroze";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -277,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FEF198716B7512C0062B58E /* Build configuration list for PBXProject "Mathismo-Feroze" */ = {
+		5FEF198716B7512C0062B58E /* Build configuration list for PBXProject "Matchismo-Feroze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FEF19AF16B7512C0062B58E /* Debug */,
@@ -286,13 +324,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FEF19B116B7512C0062B58E /* Build configuration list for PBXNativeTarget "Mathismo-Feroze" */ = {
+		5FEF19B116B7512C0062B58E /* Build configuration list for PBXNativeTarget "Matchismo-Feroze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FEF19B216B7512C0062B58E /* Debug */,
 				5FEF19B316B7512C0062B58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

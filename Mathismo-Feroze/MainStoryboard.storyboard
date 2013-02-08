@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="cardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpP-QS-8Li">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="zeH-0Y-RPB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="A6R-2I-Z5D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-1r-W4s">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="ZR7-u8-Vpz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-Ws-KCV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Ls7-2b-0L6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="XF5-w1-Igt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NP9-C0-6lP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="9Zk-T8-pkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="dzo-XS-P8c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuF-Jl-bVS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="5Tm-T3-BUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="JbQ-VT-Ksu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMM-xw-nZE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="0PI-aV-5gN"/>
+                                    <constraint firstAttribute="width" constant="58" id="RUB-iP-9Hz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="zpA-Pa-Nzd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7M-7i-mZh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOY-J2-Bcf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="0rJ-O7-VF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="RXS-O8-ThR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0l-0X-3BD">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="PQE-AH-8Jh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wk-Gg-Uov">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="5Pu-nX-dc1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot3-uh-oE2">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="9QM-ST-FDd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ob-Sz-lPC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="qHf-mG-oAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="VE5-Oz-RI3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvY-9E-9KM">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="bln-Rh-u2n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu6-hY-kWz">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="8j2-RC-2ct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfP-KD-etp">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="fsz-g8-jRU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sm5-FU-HXv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="w3P-zc-PlF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="1eu-hk-Byz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmg-HH-QnF">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="pIV-9a-shs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v6-4a-s8L">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Tmv-nZ-kgR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGA-p7-P3h">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feroze">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A clubs"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="m4c-dT-sjc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0r-DR-WV4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="YVa-6u-pOm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-oL-hgl">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="spn-tn-Wz8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dealButton:" destination="2" eventType="touchUpInside" id="AAA-wb-q9H"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1fL-0m-PMM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fv8-5u-dcP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mode:" destination="2" eventType="valueChanged" id="OnH-nm-zPA"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Ob-Sz-lPC" firstAttribute="top" secondItem="cOY-J2-Bcf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1vv-T9-Ar0"/>
+                            <constraint firstItem="vvY-9E-9KM" firstAttribute="leading" secondItem="u0l-0X-3BD" secondAttribute="leading" type="default" id="2V1-0h-A1z"/>
+                            <constraint firstItem="3wk-Gg-Uov" firstAttribute="leading" secondItem="NP9-C0-6lP" secondAttribute="leading" type="default" id="3Rv-F6-VIM"/>
+                            <constraint firstItem="cOY-J2-Bcf" firstAttribute="top" secondItem="HpP-QS-8Li" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="40J-HP-XU2"/>
+                            <constraint firstItem="1fL-0m-PMM" firstAttribute="bottom" secondItem="Rxr-oL-hgl" secondAttribute="bottom" type="default" id="594-F0-gRh"/>
+                            <constraint firstItem="OfP-KD-etp" firstAttribute="leading" secondItem="ot3-uh-oE2" secondAttribute="leading" type="default" id="7Db-pK-4gt"/>
+                            <constraint firstItem="cOY-J2-Bcf" firstAttribute="trailing" secondItem="HpP-QS-8Li" secondAttribute="trailing" type="default" id="7Mk-WN-dAB"/>
+                            <constraint firstItem="6Ob-Sz-lPC" firstAttribute="baseline" secondItem="vvY-9E-9KM" secondAttribute="baseline" type="default" id="80V-gh-Hat"/>
+                            <constraint firstItem="ot3-uh-oE2" firstAttribute="top" secondItem="EuF-Jl-bVS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8QQ-EB-qcn"/>
+                            <constraint firstItem="EuF-Jl-bVS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="9bD-QQ-JHt"/>
+                            <constraint firstItem="Hfb-Ws-KCV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="AMP-Do-XCg"/>
+                            <constraint firstItem="ot3-uh-oE2" firstAttribute="baseline" secondItem="3wk-Gg-Uov" secondAttribute="baseline" type="default" id="ANF-dh-TKN"/>
+                            <constraint firstItem="Lu6-hY-kWz" firstAttribute="top" secondItem="3wk-Gg-Uov" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Akb-mb-g57"/>
+                            <constraint firstItem="ot3-uh-oE2" firstAttribute="trailing" secondItem="EuF-Jl-bVS" secondAttribute="trailing" type="default" id="Asw-UE-euj"/>
+                            <constraint firstItem="Lu6-hY-kWz" firstAttribute="leading" secondItem="3wk-Gg-Uov" secondAttribute="leading" type="default" id="B4H-oO-ljR"/>
+                            <constraint firstItem="lmg-HH-QnF" firstAttribute="trailing" secondItem="vvY-9E-9KM" secondAttribute="trailing" type="default" id="E2Z-a1-1He"/>
+                            <constraint firstAttribute="bottom" secondItem="U0r-DR-WV4" secondAttribute="bottom" constant="71" id="EVH-nY-h8C"/>
+                            <constraint firstItem="AMM-xw-nZE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="117" id="FOe-Pk-z4t"/>
+                            <constraint firstItem="lmg-HH-QnF" firstAttribute="bottom" secondItem="Sm5-FU-HXv" secondAttribute="bottom" type="default" id="GA2-3i-Alb"/>
+                            <constraint firstItem="u0l-0X-3BD" firstAttribute="trailing" secondItem="Hfb-Ws-KCV" secondAttribute="trailing" type="default" id="Ghq-3s-kvW"/>
+                            <constraint firstItem="SYX-1r-W4s" firstAttribute="trailing" secondItem="d7M-7i-mZh" secondAttribute="trailing" type="default" id="HRi-lX-nyc"/>
+                            <constraint firstItem="AMM-xw-nZE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="-60" id="HvE-9v-ai8"/>
+                            <constraint firstItem="SYX-1r-W4s" firstAttribute="trailing" secondItem="tGA-p7-P3h" secondAttribute="trailing" type="default" id="Is7-Ap-9PD"/>
+                            <constraint firstItem="vvY-9E-9KM" firstAttribute="top" secondItem="u0l-0X-3BD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J1R-LN-3Io"/>
+                            <constraint firstItem="Sm5-FU-HXv" firstAttribute="top" secondItem="6Ob-Sz-lPC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="K22-op-LAJ"/>
+                            <constraint firstAttribute="bottom" secondItem="SYX-1r-W4s" secondAttribute="bottom" constant="38" id="LuR-4O-MTI"/>
+                            <constraint firstItem="U0r-DR-WV4" firstAttribute="centerX" secondItem="1fL-0m-PMM" secondAttribute="centerX" type="default" id="NLJ-g4-mMo"/>
+                            <constraint firstItem="3v6-4a-s8L" firstAttribute="top" secondItem="Lu6-hY-kWz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="P0y-ey-uRs"/>
+                            <constraint firstItem="Rxr-oL-hgl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="22" id="Q9L-SG-RA4"/>
+                            <constraint firstItem="NP9-C0-6lP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="QDF-P6-Rxr"/>
+                            <constraint firstItem="3v6-4a-s8L" firstAttribute="leading" secondItem="Lu6-hY-kWz" secondAttribute="leading" type="default" id="S4V-Ur-8DO"/>
+                            <constraint firstItem="ot3-uh-oE2" firstAttribute="leading" secondItem="EuF-Jl-bVS" secondAttribute="leading" type="default" id="Sv6-3q-tk3"/>
+                            <constraint firstItem="cOY-J2-Bcf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Tbi-5n-tPh"/>
+                            <constraint firstItem="HpP-QS-8Li" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Tj1-RI-1eQ"/>
+                            <constraint firstItem="Hfb-Ws-KCV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="95" id="UBg-qM-zYb"/>
+                            <constraint firstItem="u0l-0X-3BD" firstAttribute="baseline" secondItem="3wk-Gg-Uov" secondAttribute="baseline" type="default" id="VK7-yx-Pzg"/>
+                            <constraint firstItem="tGA-p7-P3h" firstAttribute="trailing" secondItem="OfP-KD-etp" secondAttribute="trailing" type="default" id="W7i-AI-Znq"/>
+                            <constraint firstItem="Rxr-oL-hgl" firstAttribute="trailing" secondItem="Sm5-FU-HXv" secondAttribute="trailing" type="default" id="XEu-fh-GC3"/>
+                            <constraint firstItem="EuF-Jl-bVS" firstAttribute="baseline" secondItem="NP9-C0-6lP" secondAttribute="baseline" type="default" id="XFC-wp-iw0"/>
+                            <constraint firstItem="Sm5-FU-HXv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="YrU-vg-gEQ"/>
+                            <constraint firstItem="U0r-DR-WV4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Yyc-Lx-y6a"/>
+                            <constraint firstItem="OfP-KD-etp" firstAttribute="top" secondItem="ot3-uh-oE2" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Zuv-Fw-zpI"/>
+                            <constraint firstItem="vvY-9E-9KM" firstAttribute="trailing" secondItem="u0l-0X-3BD" secondAttribute="trailing" type="default" id="aCG-45-Wh8"/>
+                            <constraint firstItem="Sm5-FU-HXv" firstAttribute="trailing" secondItem="6Ob-Sz-lPC" secondAttribute="trailing" type="default" id="aak-xs-k4E"/>
+                            <constraint firstAttribute="bottom" secondItem="d7M-7i-mZh" secondAttribute="bottom" constant="14" id="bCC-iK-isY"/>
+                            <constraint firstItem="d7M-7i-mZh" firstAttribute="bottom" secondItem="1fL-0m-PMM" secondAttribute="bottom" type="default" id="cDS-L2-y37"/>
+                            <constraint firstItem="lmg-HH-QnF" firstAttribute="bottom" secondItem="3v6-4a-s8L" secondAttribute="bottom" type="default" id="cPn-Xb-0Ty"/>
+                            <constraint firstItem="OfP-KD-etp" firstAttribute="trailing" secondItem="ot3-uh-oE2" secondAttribute="trailing" type="default" id="cbT-vG-26P"/>
+                            <constraint firstItem="Rxr-oL-hgl" firstAttribute="baseline" secondItem="1fL-0m-PMM" secondAttribute="baseline" type="default" id="eBF-Yo-HhK"/>
+                            <constraint firstItem="lmg-HH-QnF" firstAttribute="leading" secondItem="vvY-9E-9KM" secondAttribute="leading" type="default" id="goA-cL-Ark"/>
+                            <constraint firstItem="3v6-4a-s8L" firstAttribute="trailing" secondItem="Lu6-hY-kWz" secondAttribute="trailing" type="default" id="goV-og-NjJ"/>
+                            <constraint firstItem="cOY-J2-Bcf" firstAttribute="baseline" secondItem="u0l-0X-3BD" secondAttribute="baseline" type="default" id="hAn-An-4Eu"/>
+                            <constraint firstItem="SYX-1r-W4s" firstAttribute="leading" secondItem="1fL-0m-PMM" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="iMX-fc-Bqe"/>
+                            <constraint firstItem="tGA-p7-P3h" firstAttribute="leading" secondItem="OfP-KD-etp" secondAttribute="leading" type="default" id="jbB-Fo-jUA"/>
+                            <constraint firstAttribute="trailing" secondItem="U0r-DR-WV4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="kGv-Zd-jXf"/>
+                            <constraint firstItem="tGA-p7-P3h" firstAttribute="top" secondItem="OfP-KD-etp" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kPR-1t-YXK"/>
+                            <constraint firstItem="lmg-HH-QnF" firstAttribute="top" secondItem="vvY-9E-9KM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="m8T-TW-GuY"/>
+                            <constraint firstItem="Lu6-hY-kWz" firstAttribute="baseline" secondItem="OfP-KD-etp" secondAttribute="baseline" type="default" id="n3U-Yd-Ami"/>
+                            <constraint firstItem="vvY-9E-9KM" firstAttribute="baseline" secondItem="Lu6-hY-kWz" secondAttribute="baseline" type="default" id="o9Z-5z-WDE"/>
+                            <constraint firstItem="3wk-Gg-Uov" firstAttribute="top" secondItem="NP9-C0-6lP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oZ1-ea-Ujb"/>
+                            <constraint firstItem="1fL-0m-PMM" firstAttribute="baseline" secondItem="d7M-7i-mZh" secondAttribute="baseline" type="default" id="ons-YT-qry"/>
+                            <constraint firstItem="Hfb-Ws-KCV" firstAttribute="baseline" secondItem="HpP-QS-8Li" secondAttribute="baseline" type="default" id="p5d-Vm-gPa"/>
+                            <constraint firstItem="6Ob-Sz-lPC" firstAttribute="trailing" secondItem="cOY-J2-Bcf" secondAttribute="trailing" type="default" id="pek-8O-ieQ"/>
+                            <constraint firstItem="3v6-4a-s8L" firstAttribute="bottom" secondItem="tGA-p7-P3h" secondAttribute="bottom" type="default" id="sdT-44-8zX"/>
+                            <constraint firstItem="Lu6-hY-kWz" firstAttribute="trailing" secondItem="3wk-Gg-Uov" secondAttribute="trailing" type="default" id="tPQ-oI-Cmu"/>
+                            <constraint firstItem="NP9-C0-6lP" firstAttribute="baseline" secondItem="Hfb-Ws-KCV" secondAttribute="baseline" type="default" id="tUC-Iu-Adm"/>
+                            <constraint firstItem="HpP-QS-8Li" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wAn-6f-cNJ"/>
+                            <constraint firstItem="u0l-0X-3BD" firstAttribute="leading" secondItem="Hfb-Ws-KCV" secondAttribute="leading" type="default" id="wi6-es-Urr"/>
+                            <constraint firstAttribute="trailing" secondItem="NP9-C0-6lP" secondAttribute="trailing" constant="91" id="wmf-gZ-zyw"/>
+                            <constraint firstItem="u0l-0X-3BD" firstAttribute="top" secondItem="Hfb-Ws-KCV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wnV-j8-1Vk"/>
+                            <constraint firstItem="3wk-Gg-Uov" firstAttribute="trailing" secondItem="NP9-C0-6lP" secondAttribute="trailing" type="default" id="xAD-ty-UBC"/>
+                            <constraint firstItem="6Ob-Sz-lPC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yA4-qd-uT4"/>
+                            <constraint firstItem="d7M-7i-mZh" firstAttribute="leading" secondItem="1fL-0m-PMM" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="zvl-xv-ZMz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dealButton" destination="Rxr-oL-hgl" id="98M-gJ-wiF"/>
+                        <outlet property="flipsLabel" destination="SYX-1r-W4s" id="T9f-2s-JXX"/>
+                        <outlet property="mode" destination="1fL-0m-PMM" id="mXO-fl-56O"/>
+                        <outlet property="resultLabel" destination="U0r-DR-WV4" id="Okh-HK-cap"/>
+                        <outlet property="scoreLabel" destination="d7M-7i-mZh" id="q6a-5p-XaV"/>
+                        <outletCollection property="cardButtons" destination="HpP-QS-8Li" id="3iC-j7-U1x"/>
+                        <outletCollection property="cardButtons" destination="Hfb-Ws-KCV" id="ac2-wT-w0g"/>
+                        <outletCollection property="cardButtons" destination="NP9-C0-6lP" id="X4u-dF-We2"/>
+                        <outletCollection property="cardButtons" destination="EuF-Jl-bVS" id="KkT-b6-Ge2"/>
+                        <outletCollection property="cardButtons" destination="cOY-J2-Bcf" id="XvN-c4-Gn3"/>
+                        <outletCollection property="cardButtons" destination="u0l-0X-3BD" id="5Bs-Yv-hJM"/>
+                        <outletCollection property="cardButtons" destination="3wk-Gg-Uov" id="SQU-56-tAI"/>
+                        <outletCollection property="cardButtons" destination="ot3-uh-oE2" id="zP3-gT-U4B"/>
+                        <outletCollection property="cardButtons" destination="6Ob-Sz-lPC" id="UlE-6t-MpM"/>
+                        <outletCollection property="cardButtons" destination="vvY-9E-9KM" id="G7v-dE-AHP"/>
+                        <outletCollection property="cardButtons" destination="Lu6-hY-kWz" id="bTE-Xu-l1h"/>
+                        <outletCollection property="cardButtons" destination="OfP-KD-etp" id="bxd-b3-Acg"/>
+                        <outletCollection property="cardButtons" destination="Sm5-FU-HXv" id="Hxn-8I-Gqb"/>
+                        <outletCollection property="cardButtons" destination="lmg-HH-QnF" id="hYZ-4q-87b"/>
+                        <outletCollection property="cardButtons" destination="3v6-4a-s8L" id="baE-bC-jHT"/>
+                        <outletCollection property="cardButtons" destination="tGA-p7-P3h" id="mLy-kE-hxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
