@@ -17,8 +17,10 @@
 
 - (Card *)cardAtIndex:(NSUInteger)index;
 
+@property (nonatomic, readonly) NSString *result;
+@property (nonatomic, readonly) NSArray *resultCards;
 
-@property (nonatomic, readonly) int score;
-@property (strong, nonatomic) NSString *resultsContent;
+@property (nonatomic, readonly) int lastScore;
+@property (nonatomic, readonly) int totalScore;
 
 @end

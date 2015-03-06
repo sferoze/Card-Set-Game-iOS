@@ -10,7 +10,11 @@
 
 @interface CardMatchGame()
 @property (strong, nonatomic) NSMutableArray *cards;
-@property (nonatomic) int score;
+//@property (nonatomic) int score;
+@property (nonatomic, readwrite) NSString *result;
+@property (nonatomic, readwrite) NSArray *resultCards;
+@property (nonatomic, readwrite) int lastScore;
+@property (nonatomic, readwrite) int totalScore;
 
 @end
 
@@ -22,10 +26,15 @@
     return _cards;
 }
 
+-(NSArray *)resultCards {
+    if (!_resultCards) _resultCards = [[NSArray alloc] init];
+    return _resultCards;
+}
+
 - (id)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
     self = [super init];
-    
+    self.result = @"";
     
     if (self) {
         for (int i = 0; i < count; i++) {
@@ -35,10 +44,11 @@
             } else {
                 self.cards[i] = card;
                 card.faceUp = NO;
-                self.score = 0;
+                self.totalScore = 0;
             }
         }
     }
+    
     return self;
 }
 
@@ -51,60 +61,60 @@
 #define MISMATCH_PENALTY 2
 #define MATCH_BONUS 4
 
--(NSString *)resultToPrint: (NSMutableArray *)cards
-{
-    //Gets cards into string to print
-    NSMutableArray *stringResult = [[NSMutableArray alloc] init];
-    for (Card *otherCard in cards) {
-        [stringResult addObject:otherCard.contents]; 
-    }
-    NSString *p = [stringResult componentsJoinedByString:@" & "];
-    return p;
-
-}
 
 - (void)flipCardAtIndex:(NSUInteger)index inMode:(NSUInteger)mode
 {
+    // Get the card from the cards array
     Card *card = [self cardAtIndex:index];
-    NSMutableArray *faceUpAndPlayableCards = [[NSMutableArray alloc] init];
+    self.resultCards = nil;
+    NSMutableArray *resultCards = [self.resultCards mutableCopy];
+    NSMutableArray *otherCards = [[NSMutableArray alloc] init];
     
-    if(!card.isUnplayable) {
-        if (!card.isFaceUp){
-             self.resultsContent = [NSString stringWithFormat:@"Flipped up %@", card.contents];
-            for (Card *otherCard in self.cards){
+    
+    // Set up initial matchresult strings
+    self.result = (card.isFaceUp ? @"Flipped_back" : @"Flipped_up");
+    resultCards[0]=card;
+    // Determine if there is match by cycling through the cards and checking if there are enough
+    // cards face up to perform a match (dependent on match mode!).
+    if (!card.isUnplayable) {
+        if (!card.isFaceUp) {
+            // Fill the array with cards that are available to be matched against
+            for (Card *otherCard in self.cards) {
                 if (otherCard.isFaceUp && !otherCard.isUnplayable) {
-                    [faceUpAndPlayableCards addObject:otherCard];
+                    [otherCards addObject:otherCard];
                 }
-                if (faceUpAndPlayableCards.count == mode + 1)
-                {
-                    int matchScore = [card match:faceUpAndPlayableCards];
-                                        
-                    if (matchScore) {
-                        for (Card *flippedCard in faceUpAndPlayableCards) {
-                        flippedCard.unplayable = YES;
-                        }
-                        card.unplayable = YES;
-                        
-                        self.resultsContent = [NSString stringWithFormat:@"Matched %@ & %@ for %d points", card.contents, [self resultToPrint:faceUpAndPlayableCards], (matchScore * MATCH_BONUS)];
-                        self.score += (matchScore * MATCH_BONUS);
-                        } else {
-                        for (Card *flippedCard in faceUpAndPlayableCards){
-                        flippedCard.faceUp = NO;
-                        }
-                        self.resultsContent = [NSString stringWithFormat:@"%@ and %@ don't match! %d point penalty!", card.contents, [self resultToPrint:faceUpAndPlayableCards], MISMATCH_PENALTY];
-                        self.score -= MISMATCH_PENALTY;
-                    }
-                    break;
-                }
-              
             }
-            
-            self.score -= FLIP_COST;
+            // Are the enough cards face up to match?
+            if (otherCards.count == mode + 1) {
+                // Perform the matching
+                int matchScore = [card match:otherCards];
+                if (matchScore) {
+                    // We have a match
+                    for (Card *otherCard in otherCards) {
+                        otherCard.unplayable = YES;
+                        [resultCards insertObject:otherCard atIndex:0];
+                    }
+                    card.unplayable = YES;
+                    self.lastScore = matchScore * MATCH_BONUS;
+                    self.totalScore += self.lastScore;
+                    self.result = @"Match";
+                } else {
+                    // We don't have a match
+                    for (Card *otherCard in otherCards) {
+                        otherCard.faceUp = NO;
+                        [resultCards insertObject:otherCard atIndex:0];
+                    }
+                    self.lastScore = MISMATCH_PENALTY;
+                    self.totalScore -= self.lastScore;
+                    self.result = @"No_match";
+                }
+            }
+            self.totalScore -= FLIP_COST;
         }
-        card.faceUp = !card.isFaceUp;
-        
+        // Flip the card
+        card.faceUp = !card.faceUp;
     }
-    
+    self.resultCards = [resultCards copy];
 }
 
 

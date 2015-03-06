@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface cardViewController : UIViewController
-//@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
+@interface CardGameViewController : UIViewController
+
 
 @end

@@ -1,0 +1,13 @@
+//
+//  SetCardDeck.h
+//  Matchismo-Feroze
+//
+//  Created by Feroze Shahpurwala on 2/12/13.
+//  Copyright (c) 2013 Feroze Shahpurwala. All rights reserved.
+//
+
+#import "Deck.h"
+
+@interface SetCardDeck : Deck
+
+@end
